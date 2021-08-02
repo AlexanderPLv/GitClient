@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9AF026526B6D73D0088A041 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF026426B6D73D0088A041 /* BlueViewController.swift */; };
+		C9AF026726B6D8E80088A041 /* AppStartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF026626B6D8E80088A041 /* AppStartManager.swift */; };
 		C9EA7C3026B59B4600505EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA7C2F26B59B4600505EAA /* AppDelegate.swift */; };
 		C9EA7C3226B59B4600505EAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA7C3126B59B4600505EAA /* SceneDelegate.swift */; };
 		C9EA7C3426B59B4600505EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA7C3326B59B4600505EAA /* ViewController.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9AF026426B6D73D0088A041 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		C9AF026626B6D8E80088A041 /* AppStartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartManager.swift; sourceTree = "<group>"; };
 		C9EA7C2C26B59B4600505EAA /* GitClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EA7C2F26B59B4600505EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9EA7C3126B59B4600505EAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9AF026826B6FE080088A041 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA7C2F26B59B4600505EAA /* AppDelegate.swift */,
+				C9EA7C3126B59B4600505EAA /* SceneDelegate.swift */,
+				C9AF026626B6D8E80088A041 /* AppStartManager.swift */,
+				C9AF027126B6FF5B0088A041 /* BusinessLogic */,
+				C9AF027026B6FF520088A041 /* Entity */,
+				C9AF026F26B6FF470088A041 /* Assembly */,
+				C9AF026D26B6FEF60088A041 /* Flows */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C9AF026926B6FE140088A041 /* Enviroments */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA7C3D26B59B4E00505EAA /* Info.plist */,
+			);
+			path = "Enviroments\U0010";
+			sourceTree = "<group>";
+		};
+		C9AF026B26B6FEA60088A041 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA7C3826B59B4E00505EAA /* Assets.xcassets */,
+				C9EA7C3A26B59B4E00505EAA /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9AF026C26B6FED20088A041 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C9AF026D26B6FEF60088A041 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA7C3326B59B4600505EAA /* ViewController.swift */,
+				C9AF026426B6D73D0088A041 /* BlueViewController.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		C9AF026F26B6FF470088A041 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		C9AF027026B6FF520088A041 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C9AF027126B6FF5B0088A041 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
 		C9EA7C2326B59B4500505EAA = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +169,10 @@
 		C9EA7C2E26B59B4600505EAA /* GitClient */ = {
 			isa = PBXGroup;
 			children = (
-				C9EA7C2F26B59B4600505EAA /* AppDelegate.swift */,
-				C9EA7C3126B59B4600505EAA /* SceneDelegate.swift */,
-				C9EA7C3326B59B4600505EAA /* ViewController.swift */,
-				C9EA7C3826B59B4E00505EAA /* Assets.xcassets */,
-				C9EA7C3A26B59B4E00505EAA /* LaunchScreen.storyboard */,
-				C9EA7C3D26B59B4E00505EAA /* Info.plist */,
+				C9AF026826B6FE080088A041 /* App */,
+				C9AF026C26B6FED20088A041 /* Core */,
+				C9AF026B26B6FEA60088A041 /* Resources */,
+				C9AF026926B6FE140088A041 /* Enviroments */,
 			);
 			path = GitClient;
 			sourceTree = "<group>";
@@ -254,8 +324,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AF026726B6D8E80088A041 /* AppStartManager.swift in Sources */,
 				C9EA7C3426B59B4600505EAA /* ViewController.swift in Sources */,
 				C9EA7C3026B59B4600505EAA /* AppDelegate.swift in Sources */,
+				C9AF026526B6D73D0088A041 /* BlueViewController.swift in Sources */,
 				C9EA7C3226B59B4600505EAA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -426,7 +498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2F3F8R7TSF;
-				INFOPLIST_FILE = GitClient/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GitClient/Enviroments\U0010/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2F3F8R7TSF;
-				INFOPLIST_FILE = GitClient/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GitClient/Enviroments\U0010/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
